@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+
+int array [] = { 10, 9, 8, 4, 5, 7, 6,8, 1, 0};
+int n = sizeof(array)/sizeof(array[0]);
+
+int smallest = array[0];
+
+for(int i=1; i<n; i++){
+    if (array[i] < smallest)
+    {
+        smallest = array[i];
+    }
+}
+
+printf("The array is sorted from the smallest to the largest using array sorting: \n%d", smallest);
+
+    return 0;
+}
